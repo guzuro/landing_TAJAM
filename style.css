@@ -46,6 +46,7 @@ a {
 li {
     list-style: none;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -63,14 +64,14 @@ img {
     padding: 0px 10px;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
+/**********header section***********/
 .header {
-    background: url("we-are-bg.jpg") no-repeat center top;
+    background: url("we-are-bg.jpg") no-repeat ;
     background-size: cover;
     padding-top: 15px;
     padding-bottom: 75px;
@@ -158,4 +159,103 @@ img {
 li.active {
     background-color: #00e0d0;
     border-color: #00e0d0;
+}
+
+/************about section***************/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_story {
+    padding: 70px 0px;
+}
+
+.about_story img {
+    height: 229px;
+    margin-top: 10px;
+}
+
+.about_content {
+    margin-left: 100px;
+}
+
+.subheader {
+    color: #413d4b;
+    font-size: 22px;
+}
+
+.about_content p {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #817f86;
+    font-weight: 300;
+}
+
+.about_content button {
+    margin-top: 35px;
+}
+
+.about_play {
+    background: url('image/video_bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 200px 0px;
+    color: white;
+    font-size: 16px;
+    display: block;
+    font-weight: 900;
+    text-align: center;
+}
+
+.about_play p {
+    margin-top: 35px;
+}
+/************expertise section***************/
+.expertise {
+    padding: 50px 0px 70px 0px;
+    text-align: center;
+}
+
+.expertise>p {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #7d7976;
+    margin-top: 20px;
+}
+
+.expertise>p::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #7d7976;
+    margin: 20px auto 0px auto;
+}
+
+.expertise_list {
+    margin-top: 50px;
+}
+
+.list_item {
+    color: #7d7976;
+    font-size: 14px;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 250px;
+}
+
+.list_item>img {
+    width: fit-content;
+}
+
+.item_title {
+    color: black;
+    font-weight: 900;
+    margin-top: 35px;
+}
+
+.item_about {
+    margin-top: 20px;
 }
