@@ -314,6 +314,32 @@ li.active {
     margin: 20px auto 0px auto;
 }
 
+/**************works*********************/
+.works {
+    padding: 70px 0px 60px 0px;
+}
+
+.works .section_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.works .section_title p {
+    font-size: 14px;
+}
+
+.works_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.works_list img {
+    width: 20%;
+}
+
 
 @media screen and (max-width: 560px) {
 
