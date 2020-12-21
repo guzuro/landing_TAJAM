@@ -317,12 +317,12 @@ li.active {
 /**************works*********************/
 .works {
     padding: 70px 0px 60px 0px;
-text-align: center;}
+    text-align: center;
+}
 
 .works .section_title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 60px;
 }
 
@@ -333,13 +333,79 @@ text-align: center;}
 .works_list {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .works_list img {
     width: 20%;
 }
 
+/*****************testimonials section**************/
+.testimonials {
+    background: url(image/testimonials_bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding: 70px 0px;
+    color: white;
+    text-align: center;
+}
+
+.review-list {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.review-list li {
+    flex-shrink: 0;
+}
+
+
+.slide {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.review-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+
+.review-author {
+    margin-top: 55px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.review-position {
+    font-weight: 100;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.review-avatar {
+    margin-top: 35px;
+}
+
+.review-photo {
+    border-radius: 50%;
+}
+
+.review-photo:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    position: relative;
+    bottom: 19px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.arrow:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 560px) {
 
@@ -352,8 +418,14 @@ text-align: center;}
         margin: 20px 15px;
     }
 
-    .about_story {
+    .about_story,
+    .works_list {
         flex-direction: column;
+    }
+
+    .works_list img {
+        width: 95%;
+        margin: 0 auto;
     }
 
     .about_story img {
