@@ -317,7 +317,7 @@ li.active {
 /**************works*********************/
 .works {
     padding: 70px 0px 60px 0px;
-}
+text-align: center;}
 
 .works .section_title {
     display: flex;
