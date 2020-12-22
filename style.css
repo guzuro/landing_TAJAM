@@ -43,6 +43,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    opacity: 0.7;
+}
+
 li {
     list-style: none;
 }
@@ -82,7 +86,8 @@ img {
     color: white;
 }
 
-.header_navigation a:hover {
+.header_navigation a:hover,
+.footer_nav li a:hover {
     color: #00e0d0;
 }
 
@@ -408,7 +413,6 @@ li.active {
 }
 
 .arrow:hover {
-    opacity: 0.7;
     cursor: pointer;
 }
 
@@ -529,7 +533,6 @@ form input {
 }
 
 .subscribe_input button {
-    width: 70px;
     color: gray;
     opacity: 0.9;
 }
@@ -553,6 +556,7 @@ form input {
     margin-top: 70px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer_nav li {
@@ -560,18 +564,6 @@ form input {
     margin-right: 30px;
 }
 
-.footer_nav li a:hover {
-    color: #00e0d0;
-}
-
-@media screen and (max-width: 630px) {
-
-    .contact_form,
-    .contact_clients {
-        margin: 0 auto;
-    }
-
-}
 @media screen and (max-width: 560px) {
 
     .team_item,
@@ -601,4 +593,85 @@ form input {
     .team_item {
         margin-top: 5px;
     }
+}
+
+@media screen and (max-width: 645px) {
+
+    .contact_form,
+    .contact_clients {
+        margin: 0 auto;
+    }
+
+    .contact_clients {
+        width: 67%;
+    }
+
+}
+
+
+/**************BURGER MENU****************/
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 690px) {
+    .burger {
+        display: block;
+        float: right;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .header_navigation ul li {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .header_navigation ul {
+        display: none;
+    }
+
+    .header_navigation {
+        width: 100%;
+    }
+
+    .header_navigation ul.active {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding-top: 55px;
+        padding-bottom: 20px;
+        text-align: center;
+        width: 100%;
+        background-color: #2C264B;
+        border-bottom: 1px white solid;
+    }
+
 }

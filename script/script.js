@@ -42,3 +42,9 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
     photos[photoIndex - 1].style.width = "70px";
 }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+    document.querySelector('#navList > ul').classList.toggle("active");
+
+}
