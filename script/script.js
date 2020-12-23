@@ -43,8 +43,8 @@ function showSlides(n) {
     photos[photoIndex - 1].style.width = "70px";
 }
 
-function myFunction(x) {
-    x.classList.toggle("change");
+function showHideBurgerMenu(bars) {
+    bars.classList.toggle("change");
     document.querySelector('#navList > ul').classList.toggle("active");
 
 }

@@ -535,6 +535,7 @@ form input {
 .subscribe_input button {
     color: gray;
     opacity: 0.9;
+    width: 70px;
 }
 
 .subscribe_input button:hover {
@@ -673,5 +674,4 @@ form input {
         background-color: #2C264B;
         border-bottom: 1px white solid;
     }
-
 }
