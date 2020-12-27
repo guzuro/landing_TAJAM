@@ -78,8 +78,10 @@ img {
 
 .header_row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 .header_navigation a {
@@ -674,4 +676,11 @@ form input {
         background-color: #2C264B;
         border-bottom: 1px white solid;
     }
+}
+
+.sticky {
+    background-color: #2C264B;
+    padding: 15px 10px;
+    left: 0;
+    top: 0;
 }

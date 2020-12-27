@@ -1,10 +1,26 @@
+let navbar;
+
 $(document).ready(function () {
     $('.slider_item').on("click", function () {
         $('.slider_item').removeClass('active').eq($(this).index()).addClass('active')
     })
     showSlides(slideIndex, photoIndex);
+    navbar = document.getElementById("nav");
+    activateStickyNav();
+
 });
 
+window.onscroll = function () {
+    activateStickyNav();
+};
+
+function activateStickyNav() {
+    if (window.pageYOffset >= 50) {
+        navbar.classList.add("sticky");
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
 
 var slideIndex = 3;
 let photoIndex = 3;
